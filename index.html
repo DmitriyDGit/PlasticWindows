@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gulp example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ 
+  <link rel="stylesheet" href="src/css/style.css"/>
+   <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+<body>
+
+<div >
+	<img class="img-top" src="https://static.wixstatic.com/media/7c7824_2e7ac023ac1c4791a1c5f88fdee3a48a~mv2.png/v1/fill/w_1225,h_404,al_c,usm_0.66_1.00_0.01/7c7824_2e7ac023ac1c4791a1c5f88fdee3a48a~mv2.png">
+
+</div>
+
+	<div class = "main  " class= "main">
+		
+		<div id="winparams1" class="params col-md-3">
+			<div id = "caption"><h3>Задайте параметры окна</h3></div>
+			
+					<div class = "mainparams">	
+							<p> Тип стеклопакета</p>
+							<select name="type" id="wintype" >
+		              <option value="1">Однокамерный</option>
+		              <option value="2">Двухкамерный</option>
+		          </select>
+						</div>
+
+						<div class = "mainparams">	
+							<p> Цвет окна</p>
+							<select name="steklopaket" id="wincolor" >
+		              <option value="1">Белый</option>
+		              <option value="2">Коричневый</option>
+		              <option value="3" id = "enotherColor">Другой</option>
+		          </select>
+						</div>
+
+						<div class = "mainparams" id="wincolorprivat">	
+							<p> Укажите цвет</p>
+							<input type="text" name="wincolorprivat">
+		        </div>
+		        		<p class="bg-danger validation-msg" id = "validation-msg">Ошибка заполнения формы </p>
+		</div>
+
+
+
+		<div id="winparams2" class ="leafparams col-md-4" >
+			
+			<div class="mainleafs">
+				<div class="leafs"> 
+						<img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev1.jpg" >
+						<input type="radio" name="komplekt1" id="komplekt1" value="1" class = "komplekt" checked>
+				</div>
+				<div class="leafs"> 
+						<img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev2.jpg" >
+					<input type="radio" name="komplekt2" id="komplekt2" value="2" class = "komplekt" ">
+				</div>
+			<div class="leafs"> 
+						<img src="http://oknaplus.kiev.ua/wp-content/themes/okna2014/img2/prev3.jpg" >
+						<input type="radio" name="komplekt3" id="komplekt3" value="3" class = "komplekt" > 
+			</div>
+			<div>  
+				</div>
+		</div>
+
+		<div class = "constructionparams"> 
+			<div class="mainsize" >
+				<div class = "size width">
+					<p>Ширина, мм</p>
+					<input type="text" name="width" id = "winwidth">
+				</div>
+			<div class = "size heigth">
+					<p>Высота, мм</p>
+					<input type="text" name="height" id = "winheight">
+			</div>
+		</div>
+			
+
+
+			<div id = "winappearence" class="appearence" >
+						<div id="leaf1" class = "leafsresult leafsresult1">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/1gl.jpg" class="simpleleaf1">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/2povr.jpg" class="foldingleaf1">
+							<select name="construction" id="winconstruction1" class = "construction">
+		             <option value="0">Выберите конструкцию</option> 
+		              <option value="1">Глухая</option>
+		              <option value="2">Поворотная</option>
+		          </select>
+		        </div>		
+						<div id="leaf2" class = "leafsresult leafsresult2">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/1gl.jpg" class="simpleleaf2">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/2povr.jpg" class="foldingleaf2">
+							<select name="construction" id="winconstruction2" class = "construction">
+								 <option value="0">Выберите конструкцию</option> 
+              		<option value="1">Глухая</option>
+		              <option value="2">Поворотная</option>
+		          </select>
+						</div>		
+						<div id="leaf3" class = "leafsresult leafsresult3">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/1gl.jpg" class="simpleleaf3">
+							<img src="http://oknaplus.kiev.ua/wp-content/themes/oknanew/img2/2povr.jpg" class="foldingleaf3">
+							<select name="construction" id="winconstruction3" class = "construction">
+								 <option value="0">Выберите конструкцию</option> 
+		             	<option value="1">Глухая</option>
+				         	<option value="2">Поворотная</option>
+		          </select>
+						</div>		
+			</div>
+		</div>
+
+		<div id = "value" class= " aproximalvalue">
+
+			  <p class="center price">Цена: <span id="price">0</span> $</p>
+				<p class="center leafprice">Размер одной створки: <span id="leafsize">0</span> мм</p>
+				<input type="submit" value="Пересчитать стоимость" id="submit" class = "btn">
+				<input type="submit" value="Сбросить параметры" id="reset" class = "btn">
+		</div>
+
+
+		</div>
+
+	</div>
+				
+	<script type="text/javascript" src = "src/js/main.js"></script>
+</body>
+</html>
